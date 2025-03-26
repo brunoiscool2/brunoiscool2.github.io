@@ -1,3 +1,3 @@
 <img src="https://img.shields.io/github/repo-size/brunoiscool2/brunoiscool2.github.io?style=for-the-badge&labelColor=%23000000&color=%231c1c1c">
-    <img src="https://img.shields.io/github/stars/brunoiscool2/brunoiscool2.github.io?style=for-the-badge&labelColor=%23000000&color=%231c1c1c">
-    <img src="https://img.shields.io/github/forks/brunoiscool2/brunoiscool2.github.io?style=for-the-badge&labelColor=000000&color=1c1c1c">
+<img src="https://img.shields.io/github/repo-size/brunoiscool2/games2?style=for-the-badge&labelColor=%23000000&color=%231c1c1c">
+    
