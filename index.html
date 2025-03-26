@@ -37,12 +37,14 @@
 <h1 style="font-size: 2.5rem; margin: 0;">BrunysIXLWork</h1>
 <p id="dynamic-text" onclick="changeText()"></p>
 
-<div class="button-container" id="buttonContainer">
-
-<button class="filter-button" onclick="window.location.href='/gms.html'">GAMES</button>
-<button class="filter-button" onclick="window.location.href='/aps.html'">APPS</button>
-
-</div>
+<form id="uv-form"">
+            <input id="uv-search-engine" value="https://www.duckduckgo.com/?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+          </form>
+          <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+          </div>
 
 <script>
     const messages = [
@@ -84,11 +86,11 @@ changeText();
     <script src="/assets/js/ixlbrunysorg.js"></script>
     <script src="/assets/js/proxy/proxyindex.js"></script>
     <script src="/assets/js/proxy/proxysetting.js"></script>
-    <script src="/ixl/uv/uv.bundle.js" defer=""></script>
-    <script src="/ixl/uv/uv.config.js" defer=""></script>
-    <script src="/ixl/register-sw.js" defer=""></script>
-    <script src="/ixl/search.js" defer=""></script>
-    <script src="/ixl/index.js" defer=""></script>
+    <script src="/active/uv/uv.bundle.js" defer=""></script>
+    <script src="/active/uv/uv.config.js" defer=""></script>
+    <script src="/active/register-sw.js" defer=""></script>
+    <script src="/active/search.js" defer=""></script>
+    <script src="/active/index.js" defer=""></script>
     <script src="/assets/js/loadingscreen.js"></script>
     <script src="/assets/js/bannerscroll.js"></script>
     <script src="/assets/js/settings/anticlose.js"></script>
