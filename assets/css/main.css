@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body {
-	background: url('/assets/images/bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-	font-family: "League Spartan", serif;
-	color: #fff;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
+    background: url('/assets/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover; 
     font-family: "Lexend", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .banner {
