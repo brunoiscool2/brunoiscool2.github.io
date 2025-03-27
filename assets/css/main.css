@@ -13,7 +13,7 @@ body {
 
 .banner {
 	width: 100%;
-	height: calc(100vh - 0px);
+	height: calc(100vh - -100px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
