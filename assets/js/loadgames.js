@@ -1,30 +1,40 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let gamesData = []; // Store games data for filtering
+    let gamesData = []; 
     
     fetch('/assets/js/games.json')
         .then(response => response.json())
         .then(data => {
-            gamesData = data.games; // Store the data
-            renderGames(gamesData); // Initial render
+            gamesData = data.games; 
+            renderGames(gamesData); 
             
-            // Add event listener for search
+
             document.getElementById('searchBar').addEventListener('input', filterGames);
         })
         .catch(error => console.error('Error loading games:', error));
 
     function renderGames(games) {
         const gamesContainer = document.getElementById('games-container');
-        gamesContainer.innerHTML = ''; // Clear previous results
+        gamesContainer.innerHTML = ''; 
         
         games.forEach(game => {
             const gameElement = document.createElement('div');
             gameElement.className = 'game-box';
             gameElement.innerHTML = `
                 <a href="${game.url}">
-                    <img src="${game.image}" alt="${game.name}" width="200" height="200">
+                    <div class="loader"></div> 
+                    <img src="${game.image}" alt="${game.name}" width="170" height="170">
                     <div class="game-title">${game.name}</div>
                 </a>
             `;
+
+            const img = gameElement.querySelector("img");
+            const loader = gameElement.querySelector(".loader");
+
+            img.onload = function() {
+                loader.remove(); 
+                img.style.opacity = "1"; 
+            };
+
             gamesContainer.appendChild(gameElement);
         });
     }
