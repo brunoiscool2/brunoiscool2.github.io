@@ -576,11 +576,6 @@
         "image": "/images/tetris.jpg"
       },
       {
-        "name": "Super Mario Flash",
-        "url": "/iframe.html?url=/assets/html/flash.html?url=/assets/flash/supermarioflash.swf",
-        "image": "/images/supermarioflash.jpg"
-      },
-      {
         "name": "Cargo Bridge",
         "url": "/iframe.html?url=/assets/html/flash.html?url=/assets/flash/cargobridge.swf",
         "image": "/images/cargobridge.jpg"
