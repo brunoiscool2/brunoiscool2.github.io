@@ -1766,14 +1766,14 @@
         "image": "/images/stacktower.jpg"
       },
       {
-        "name": "Tetris",
+        "name": "Tetris (HTML)",
         "url": "/iframe.html?url=/games4/html5/tetris/",
         "image": "/images/tetris.jpg"
       },
       {
         "name": "Tower Master",
         "url": "/iframe.html?url=/games4/html5/towermaster/",
-        "image": "/images/towermaster.jpg"
+        "image": "/images/dek.png"
       },
       {
         "name": "Underrun",
