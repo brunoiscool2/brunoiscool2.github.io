@@ -1586,11 +1586,6 @@
         "image": "/images/fireboywatergirl4.jpg"
       },
       {
-        "name": "Firewater",
-        "url": "/iframe.html?url=/games4/html5/firewater/",
-        "image": "/images/firewater.jpg"
-      },
-      {
         "name": "Flappy 2048",
         "url": "/iframe.html?url=/games4/html5/flappy-2048/play/",
         "image": "/images/flappy2048.jpg"
@@ -1733,7 +1728,7 @@
       {
         "name": "Super Mario 63 (HTML)",
         "url": "/iframe.html?url=/games4/html5/sm63/",
-        "image": "/images/supermario63html.jpg"
+        "image": "/images/supermario63.jpg"
       },
       {
         "name": "Super Mario 64",
