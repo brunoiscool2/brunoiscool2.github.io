@@ -6,6 +6,11 @@
         "image": "/images/roblox.jpg"
       },
       {
+        "name": "FC Mobile",
+        "url": "/iframe.html?url=/proxygames/fcmobile.html",
+        "image": "/images/fcmobile.jpg"
+      },
+      {
         "name": "Slope",
         "url": "/iframe.html?url=/games1/slope/",
         "image": "/images/slope.jpg"
