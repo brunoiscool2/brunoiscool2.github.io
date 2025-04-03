@@ -9,7 +9,6 @@
                 background-color: black;
             }
 
-            /* Custom Loading Screen */
             #loading-screen {
                 position: fixed;
                 top: 0;
@@ -42,7 +41,6 @@
                 100% { transform: rotate(360deg); }
             }
 
-            /* Hide Ruffle completely until Flash loads */
             #ruffle {
                 width: 100vw;
                 height: 100vh;
@@ -51,7 +49,7 @@
         </style>
     </head>
     <body>
-        <!-- Custom Loading Screen -->
+        <div id="embed-overlay">Running off brunysixlwork</div>
         <div id="loading-screen">
             <div class="loader"></div>
             <p>Loading Flash content...</p>
@@ -59,6 +57,7 @@
 
         <div id="ruffle"></div>
 
+        <script src="/assets/js/credits.js"></script>
         <script>
             function loadLocalRuffle() {
                 var script = document.createElement('script');
@@ -76,7 +75,7 @@
                 return urlParams.get('url');
             }
 
-            let player; // Global player reference
+            let player; 
             window.RufflePlayer = window.RufflePlayer || {};
 
             window.addEventListener("load", () => {
@@ -84,7 +83,7 @@
                 let savedSWF = localStorage.getItem("swfFile");
                 let lastFrame = localStorage.getItem("swfFrame");
 
-                // If no new SWF is loaded, restore the last played one
+             
                 if (!swfFile && savedSWF) {
                     swfFile = savedSWF;
                 }
@@ -98,23 +97,23 @@
                     player.style.height = "100%";
                     container.appendChild(player);
 
-                    // Load the SWF file
+                  
                     player.load(swfFile).then(() => {
-                        // Hide the loading screen & show Flash
+            
                         document.getElementById("loading-screen").style.display = "none";
                         document.getElementById("ruffle").style.visibility = "visible";
 
-                        // Restore the last playback position
+               
                         if (lastFrame) {
                             setTimeout(() => {
-                                player.set_frame(parseInt(lastFrame)); // Set last frame
+                                player.set_frame(parseInt(lastFrame)); 
                             }, 500);
                         }
 
-                        // Save SWF info for reload persistence
+                
                         localStorage.setItem("swfFile", swfFile);
 
-                        // Save playback state every 2 seconds
+                      
                         setInterval(() => {
                             if (player.get_frame) {
                                 localStorage.setItem("swfFrame", player.get_frame());
