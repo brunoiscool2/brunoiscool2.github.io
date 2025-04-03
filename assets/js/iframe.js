@@ -1,13 +1,22 @@
 const iframe = document.getElementById('gameframe');
+
+
 const urlParam = getQueryParam('url');
+
+
+const savedUrl = localStorage.getItem('iframeUrl');
 
 if (urlParam) {
     const decodedUrl = decodeURIComponent(urlParam);
     iframe.src = decodedUrl;
+    localStorage.setItem('iframeUrl', decodedUrl); 
     history.replaceState(null, '', window.location.pathname);
     console.log('Iframe URL set from query param:', decodedUrl);
+} else if (savedUrl) {
+    iframe.src = savedUrl; 
+    console.log('Iframe URL set from localStorage:', savedUrl);
 } else {
-    iframe.src = 'https://example.com';
+    iframe.src = 'https://example.com'; 
     console.log('Iframe URL set to default:', iframe.src);
 }
 
@@ -28,7 +37,7 @@ function toggleFullscreen() {
 }
 
 function refreshIframe() {
-    iframe.src = iframe.src;
+    iframe.src = iframe.src; 
     console.log('Iframe refreshed');
 }
 
